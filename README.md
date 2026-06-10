@@ -139,12 +139,12 @@ Mỗi ngày một bài, nâng cao tư duy với các chủ đề: cửa sổ tr�
 ### Day 49: LRU Cache
 **Mô tả:** Thiết kế cấu trúc bộ nhớ đệm LRU (Least Recently Used) với dung lượng cố định. Hỗ trợ `get(key)` và `put(key, value)` trong O(1). Khi đầy, loại bỏ phần tử ít được dùng nhất.  
 **Input:** 
-LRUCache lRUCache = new LRUCache(2);
-lRUCache.put(1, 1); // cache là {1=1}
-lRUCache.put(2, 2); // cache là {1=1, 2=2}
-lRUCache.get(1); // trả về 1
-lRUCache.put(3, 3); // vượt dung lượng, xóa key 2, cache là {1=1, 3=3}
-lRUCache.get(2); // trả về -1 (không tìm thấy)
+LRUCache cache = new LRUCache(2);
+cache.put(1, 1); // cache: {1=1}
+cache.put(2, 2); // cache: {1=1, 2=2}
+cache.get(1); // trả về 1
+cache.put(3, 3); // vượt dung lượng → xóa key 2, cache: {1=1, 3=3}
+cache.get(2); // trả về -1 (không tìm thấy)
 **Output:** `[null,null,null,1,null,-1]`
 
 ---
@@ -230,6 +230,3 @@ lRUCache.get(2); // trả về -1 (không tìm thấy)
 ---
 
 Chúc bạn luyện tập vui vẻ và sớm chinh phục mọi kỳ phỏng vấn! 💻⚡
-### Day 49: LRU Cache
-**Mô tả:** Thiết kế cấu trúc bộ nhớ đệm LRU (Least Recently Used) với dung lượng cố định. Hỗ trợ `get(key)` và `put(key, value)` trong O(1). Khi đầy, loại bỏ phần tử ít được dùng nhất.  
-**Input:** 
